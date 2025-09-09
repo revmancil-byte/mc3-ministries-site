@@ -37,6 +37,11 @@
   <!-- Hero -->
   <section class="py-20 md:py-28 text-center bg-slate-50">
     <h1 class="text-4xl font-extrabold">Equipping Believers. Serving Communities. <span style="color:var(--teal)">Advancing the Gospel.</span></h1>
+    <div class="mt-6 flex justify-center gap-3">
+      <a href="https://books2read.com/holybutnotperfect" target="_blank" class="rounded-2xl px-6 py-3 text-white font-semibold" style="background:#088fb8">
+        Buy the Book
+      </a>
+    </div>
   </section>
 
   <!-- Mission -->
@@ -58,8 +63,8 @@
   <!-- Book Section -->
   <section id="book" class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <img src="assets/book-cover.jpg" alt="Holy, But Not Perfect book cover" class="rounded-2xl shadow-xl">
+      <div class="text-center">
+        <img src="assets/book-cover.jpg" alt="Holy, But Not Perfect book cover" class="rounded-xl shadow-md w-48 h-auto mx-auto">
       </div>
       <div>
         <h2 class="text-3xl font-bold">Holy, But Not Perfect</h2>
@@ -72,6 +77,78 @@
             Buy the Book
           </a>
         </div>
+
+        <!-- Testimonials -->
+
+        <!-- Testimonials (Carousel) -->
+        <div class="mt-10">
+          <div id="testimonials" class="relative overflow-hidden rounded-xl ring-1 ring-slate-200 bg-slate-50">
+            <div class="p-6 min-h-[150px]">
+              <p id="t-quote" class="italic text-slate-700">“This book is raw, honest, and inspiring. Rev. Dr. Carroll’s journey shows us that God’s grace truly restores.”</p>
+              <footer id="t-author" class="mt-2 text-sm text-slate-500">— Local Pastor, Dallas, TX</footer>
+            </div>
+            <!-- Controls -->
+            <div class="absolute inset-x-0 bottom-2 flex items-center justify-center gap-2">
+              <button id="prevBtn" aria-label="Previous" class="px-2 py-1 rounded border text-xs bg-white">‹</button>
+              <div id="dots" class="flex gap-1"></div>
+              <button id="nextBtn" aria-label="Next" class="px-2 py-1 rounded border text-xs bg-white">›</button>
+            </div>
+          </div>
+        </div>
+        <script>
+          (function() {
+            const items = [
+              {
+                quote: "“This book is raw, honest, and inspiring. Rev. Dr. Carroll’s journey shows us that God’s grace truly restores.”",
+                author: "— Local Pastor, Dallas, TX"
+              },
+              {
+                quote: "“I couldn’t put it down. A powerful testimony that reminds us redemption is possible for everyone.”",
+                author: "— Reader Review"
+              },
+              {
+                quote: "“A redemptive story that will encourage leaders and lift the brokenhearted.”",
+                author: "— Community Leader"
+              }
+            ];
+            let i = 0;
+            const quoteEl = document.getElementById('t-quote');
+            const authorEl = document.getElementById('t-author');
+            const dotsEl = document.getElementById('dots');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            function renderDots() {
+              dotsEl.innerHTML = '';
+              items.forEach((_, idx) => {
+                const b = document.createElement('button');
+                b.className = 'h-2 w-2 rounded-full ' + (idx === i ? 'bg-slate-700' : 'bg-slate-300');
+                b.addEventListener('click', () => { i = idx; render(); resetTimer(); });
+                dotsEl.appendChild(b);
+              });
+            }
+
+            function render() {
+              quoteEl.textContent = items[i].quote;
+              authorEl.textContent = items[i].author;
+              renderDots();
+            }
+
+            function next() { i = (i + 1) % items.length; render(); }
+            function prev() { i = (i - 1 + items.length) % items.length; render(); }
+
+            prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+            nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+
+            let timer = setInterval(next, 5000);
+            function resetTimer() { clearInterval(timer); timer = setInterval(next, 5000); }
+
+            render();
+          })();
+        </script>
+
+        <div class="mt-10 space-y-6">
+                  </div>
       </div>
     </div>
   </section>
