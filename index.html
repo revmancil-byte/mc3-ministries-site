@@ -13,10 +13,10 @@
       --bone: #f8fafc;
     }
     a.btn-primary { background: var(--teal); }
+    .nav-active { color: var(--teal) !important; font-weight: 600; }
   </style>
 </head>
 <body class="bg-white text-slate-800">
-  <!-- Nav -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -24,13 +24,13 @@
         <span class="font-bold tracking-tight text-lg">MC3 Ministries</span>
       </div>
       <div class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#mission" class="hover:text-slate-900">Mission</a>
-        <a href="#ministries" class="hover:text-slate-900">Ministries</a>
+        <a href="#mission" class="hover:text-slate-900 nav-link">Mission</a>
+        <a href="#ministries" class="hover:text-slate-900 nav-link">Ministries</a>
         <a href="book.html" class="hover:text-slate-900">Book</a>
-        <a href="#events" class="hover:text-slate-900">Events</a>
-        <a href="#partner" class="hover:text-slate-900">Partner</a>
-        <a href="#contact" class="hover:text-slate-900">Contact</a>
-        <a href="#partner" class="rounded-2xl px-5 py-2 text-white" style="background: var(--teal);">Donate</a>
+        <a href="#events" class="hover:text-slate-900 nav-link">Events</a>
+        <a href="#partner" class="hover:text-slate-900 nav-link">Partner</a>
+        <a href="#contact" class="hover:text-slate-900 nav-link">Contact</a>
+        <a href="#partner" class="btn-primary rounded-2xl px-5 py-2 text-white">Donate</a>
       </div>
     </nav>
   </header>
@@ -70,17 +70,14 @@
     </div>
   </section>
 
-  <!-- Mission & Values -->
   <section id="mission" class="py-16 md:py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-5 gap-10">
         <div class="md:col-span-2">
           <h2 class="text-3xl font-bold tracking-tight">Our Mission</h2>
-          <p class="mt-4 text-slate-600">
-            To proclaim the message of Jesus Christ, equip believers for growth, and empower communities through service, outreach, and leadership development.
-          </p>
+          <p class="mt-4 text-slate-600">To proclaim the message of Jesus Christ, equip believers for growth, and empower communities through service, outreach, and leadership development.</p>
           <div class="mt-6">
-            <a href="#ministries" class="rounded-2xl px-5 py-2 text-white" style="background: var(--deepTeal)">Read the Vision</a>
+            <a href="#ministries" class="btn-primary rounded-2xl px-5 py-2 text_white">Read the Vision</a>
           </div>
         </div>
         <div class="md:col-span-3 grid sm:grid-cols-2 gap-6">
@@ -92,7 +89,7 @@
             <p class="text-slate-600">Rooted in Scripture and prayer.</p>
           </div>
           <div class="rounded-2xl ring-1 ring-slate-200 p-5 bg-white">
-            <div class="flex items-center gap-3 mb-2">
+            <div class="flex items_center gap-3 mb-2">
               <div class="h-10 w-10 grid place-items-center rounded-xl bg-slate-50">🤝</div>
               <h3 class="text-lg font-semibold">Service</h3>
             </div>
@@ -117,7 +114,6 @@
     </div>
   </section>
 
-  <!-- Ministries -->
   <section id="ministries" class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-end justify-between gap-6 mb-10">
@@ -132,38 +128,37 @@
         <div class="rounded-2xl ring-1 ring-slate-200 p-6 bg-white">
           <h3 class="text-xl font-semibold">Preaching & Teaching</h3>
           <p class="text-slate-600 mt-2">Gospel-centered sermons, conferences, and Bible intensives tailored for churches and events.</p>
-          <a href="mailto:info@mc3ministries.org?subject=Speaking%20Invitation" class="inline-block mt-4 rounded-2xl px-4 py-2 text-white" style="background: var(--teal)">Invite to Speak</a>
+          <a href="mailto:info@mc3ministries.org?subject=Speaking%20Invitation" class="inline-block mt-4 btn-primary rounded-2xl px-4 py-2 text-white">Invite to Speak</a>
         </div>
         <div class="rounded-2xl ring-1 ring-slate-200 p-6 bg-white">
           <h3 class="text-xl font-semibold">Leadership Development</h3>
           <p class="text-slate-600 mt-2">Workshops and cohorts equipping ministry and marketplace leaders with biblical wisdom.</p>
-          <a href="#contact" class="inline-block mt-4 rounded-2xl px-4 py-2 text-white" style="background: var(--teal)">Start a Cohort</a>
+          <a href="#contact" class="inline-block mt-4 btn-primary rounded-2xl px-4 py-2 text-white">Start a Cohort</a>
         </div>
         <div class="rounded-2xl ring-1 ring-slate-200 p-6 bg-white">
           <h3 class="text-xl font-semibold">Community Outreach</h3>
           <p class="text-slate-600 mt-2">Partnership-driven service: food distribution, mentoring, senior support, and more.</p>
-          <a href="#partner" class="inline-block mt-4 rounded-2xl px-4 py-2 text-white" style="background: var(--teal)">Partner with Us</a>
+          <a href="#partner" class="inline-block mt-4 btn-primary rounded-2xl px-4 py-2 text-white">Partner with Us</a>
         </div>
         <div class="rounded-2xl ring-1 ring-slate-200 p-6 bg-white">
           <h3 class="text-xl font-semibold">Youth & Family</h3>
           <p class="text-slate-600 mt-2">After-school programs, tutoring, sports outreach, and family strengthening initiatives.</p>
-          <a href="#contact" class="inline-block mt-4 rounded-2xl px-4 py-2 text-white" style="background: var(--teal)">Get Involved</a>
+          <a href="#contact" class="inline-block mt-4 btn-primary rounded-2xl px-4 py-2 text-white">Get Involved</a>
         </div>
         <div class="rounded-2xl ring-1 ring-slate-200 p-6 bg-white">
           <h3 class="text-xl font-semibold">Resources & Publishing</h3>
           <p class="text-slate-600 mt-2">Books, devotionals, and media that encourage, equip, and inspire.</p>
-          <a href="#contact" class="inline-block mt-4 rounded-2xl px-4 py-2 text-white" style="background: var(--teal)">Browse Resources</a>
+          <a href="#contact" class="inline-block mt-4 btn-primary rounded-2xl px-4 py-2 text-white">Browse Resources</a>
         </div>
         <div class="rounded-2xl ring-1 ring-slate-200 p-6 bg-white">
           <h3 class="text-xl font-semibold">Prayer & Care</h3>
           <p class="text-slate-600 mt-2">Intercessory prayer, counseling referrals, and compassionate care teams.</p>
-          <a href="mailto:info@mc3ministries.org?subject=Prayer%20Request" class="inline-block mt-4 rounded-2xl px-4 py-2 text-white" style="background: var(--teal)">Request Prayer</a>
+          <a href="mailto:info@mc3ministries.org?subject=Prayer%20Request" class="inline-block mt-4 btn-primary rounded-2xl px-4 py-2 text-white">Request Prayer</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Events Placeholder -->
   <section id="events" class="py-16 md:py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="md:flex items-end justify-between mb-10">
@@ -178,7 +173,7 @@
           <h3 class="text-lg font-semibold">Sample Event 1</h3>
           <p class="text-slate-600 mt-2">Date • Location • Brief description of the event and who it's for.</p>
           <div class="mt-4 flex gap-3">
-            <a href="#contact" class="rounded-2xl px-4 py-2 text-white" style="background: var(--deepTeal)">Register</a>
+            <a href="#contact" class="btn-primary rounded-2xl px-4 py-2 text-white">Register</a>
             <a href="#contact" class="rounded-2xl px-4 py-2 border border-slate-300">Details</a>
           </div>
         </div>
@@ -186,7 +181,7 @@
           <h3 class="text-lg font-semibold">Sample Event 2</h3>
           <p class="text-slate-600 mt-2">Date • Location • Brief description of the event and who it's for.</p>
           <div class="mt-4 flex gap-3">
-            <a href="#contact" class="rounded-2xl px-4 py-2 text-white" style="background: var(--deepTeal)">Register</a>
+            <a href="#contact" class="btn-primary rounded-2xl px-4 py-2 text-white">Register</a>
             <a href="#contact" class="rounded-2xl px-4 py-2 border border-slate-300">Details</a>
           </div>
         </div>
@@ -194,7 +189,7 @@
           <h3 class="text-lg font-semibold">Sample Event 3</h3>
           <p class="text-slate-600 mt-2">Date • Location • Brief description of the event and who it's for.</p>
           <div class="mt-4 flex gap-3">
-            <a href="#contact" class="rounded-2xl px-4 py-2 text-white" style="background: var(--deepTeal)">Register</a>
+            <a href="#contact" class="btn-primary rounded-2xl px-4 py-2 text_white">Register</a>
             <a href="#contact" class="rounded-2xl px-4 py-2 border border-slate-300">Details</a>
           </div>
         </div>
@@ -202,7 +197,6 @@
     </div>
   </section>
 
-  <!-- Partner / Donate -->
   <section id="partner" class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
       <div>
@@ -227,11 +221,11 @@
             <div class="text-2xl font-extrabold" style="color: var(--deepTeal)">+150</div>
             <div class="text-sm text-slate-600">Youth served</div>
           </div>
-          <div class="p-4 rounded-xl bg-slate-50 ring-1 ring-slate-200">
+          <div class="p-4 rounded-2xl bg-slate-50 ring-1 ring-slate-200">
             <div class="text-2xl font-extrabold" style="color: var(--deepTeal)">+200</div>
             <div class="text-sm text-slate-600">Adults equipped</div>
           </div>
-          <div class="p-4 rounded-xl bg-slate-50 ring-1 ring-slate-200">
+          <div class="p-4 rounded-2xl bg-slate-50 ring-1 ring-slate-200">
             <div class="text-2xl font-extrabold" style="color: var(--deepTeal)">+100</div>
             <div class="text-sm text-slate-600">Seniors & veterans supported</div>
           </div>
@@ -241,7 +235,6 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="py-16 md:py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10">
       <div>
@@ -273,7 +266,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="border-t bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-8">
       <div>
@@ -303,5 +295,28 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      const links = Array.from(document.querySelectorAll('a.nav-link[href^="#"]'));
+      const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+      function onScroll() {
+        let activeId = null;
+        const fromTop = window.scrollY + 100;
+        sections.forEach(sec => {
+          if (sec.offsetTop <= fromTop && (sec.offsetTop + sec.offsetHeight) > fromTop) {
+            activeId = '#' + sec.id;
+          }
+        });
+        links.forEach(a => {
+          if (a.getAttribute('href') === activeId) a.classList.add('nav-active');
+          else a.classList.remove('nav-active');
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('load', onScroll);
+      onScroll();
+    })();
+  </script>
 </body>
 </html>
